@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cyborg War Demo</title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="./Content/game.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+</head>
+<body>
+  <canvas id="canvas" width="1350" height="480" style="background-color:#000000" ></canvas>
+  <!-- <img id="coverImg"  height="480" src="./Assets/images/cover.png" alt="cover">-->
+   <!-- <canvas id="canvas2" width="1350" height="70" style="background-color:#73afc7" ></canvas> -->
+  <img id = "instruction" src="../Assets/images/Instruction.png">
+  <!-- JavaScript Section -->
+  <script>
+    window.onload = function() {
+    var c=document.getElementById("canvas2");
+    var ctx=c.getContext("2d");
+    var img=document.getElementById("scream");
+    ctx.drawImage(img,10,10);
+};
+
+  </script>
+  <!-- CreateJS Libraries -->
+  <script src="./node_modules/easeljs/lib/easeljs.min.js"></script>
+  <script src="./node_modules/tweenjs/lib/tweenjs.min.js"></script>
+  <script src="./node_modules/soundjs/lib/soundjs.min.js"></script>
+  <script src="./node_modules/preloadjs/lib/preloadjs.min.js"></script>
+
+  <!-- Game Scripts -->
+  <!-- Configuration Files -->
+  <script src="./Scripts/config/scene.js"></script>
+  <script src="./Scripts/config/keys.js"></script>
+
+  <!-- Math Library -->
+  <script src="./Scripts/math/vec2.js"></script>
+
+
+
+  <!-- objects -->
+  <script src="./Scripts/objects/game.js"></script>
+  <script src="./Scripts/objects/label.js"></script>
+  <script src="./Scripts/objects/button.js"></script>
+  <script src="./Scripts/objects/scene.js"></script>
+  <script src="./Scripts/objects/gameobject.js"></script>
+<!-- Manager -->
+  <script src="./Scripts/managers/keyboard.js"></script>
+  <script src="./Scripts/managers/scoreboard.js"></script>
+  <script src="./Scripts/managers/collision.js"></script>
+
+  
+  <!-- Game Objects -->
+  
+  <script src="./Scripts/objects/level1.js"></script>
+  <script src="./Scripts/objects/level2.js"></script>
+  <script src="./Scripts/objects/level3.js"></script>
+
+  <script src="./Scripts/objects/bullet.js"></script>
+  <script src="./Scripts/objects/ninja.js"></script>
+  <script src="./Scripts/objects/ninjaNew.js"></script>
+  <script src="./Scripts/objects/cyborg.js"></script>
+  <script src="./Scripts/objects/cyborgbullet.js"></script>
+  <script src="./Scripts/objects/sushi.js"></script>
+
+  <!-- Scenes -->
+  <script src="./Scripts/scenes/over.js"></script>
+  <script src="./Scripts/scenes/play.js"></script>
+  <script src="./Scripts/scenes/play2.js"></script>
+  <script src="./Scripts/scenes/play3.js"></script>
+  <script src="./Scripts/scenes/win.js"></script>
+  <script src="./Scripts/scenes/start.js"></script>
+  <script src="./Scripts/scenes/tutorials.js"></script>
+
+  <script src="./Scripts/core/game.js"></script>
+</body>
+</html>
